@@ -1,10 +1,10 @@
 import speedtest
 import time
 
-
 def speed_test_internet():
     download_list= []
     upload_list= []
+    # Get speed in Mbps 3 times.
     for i in range(3):
         speed_test = speedtest.Speedtest()
         download_speed = speed_test.download()/1000000
